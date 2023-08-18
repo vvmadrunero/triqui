@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>juego_</title>
+    
+</head>
+<body>
+    <header class="header">
+        <!--Imagen de consola-->
+        <figure class="header_fig">
+            <img class= "header_fig-icon" src="/img/juego.png" alt="Game Icon" width="70px" >
+
+        </figure>
+        <h1 class="header_h1">Bienvenidos</h1>
+
+    </header>
+    <section>
+        <!--jugador numero 1-->
+        <aside class="section__aside">
+            <h2 class="section__aside-h2" id="player1_title">Jugador1</h2>
+            <picture class="section__aside-picture">
+                <img src="img/ponyo.png" alt="initial" id="img_player1" width="210px">
+
+            </picture>
+            <div class="=section__div">
+                <p class="section__div-p">Puntuación:</p>
+                <p class="section__div_number_score" id="score1">0</p>
+
+            </div>
+
+        </aside>
+
+        <main class="section__main">
+            <table class="section__main-table">
+                <!--Botones del juego-->
+                <tr>
+                    <td id="v1_1">
+                        <button class="button_sel button_select" onclick="active_v1()" type="button" id="button_active1"></button>
+                    </td>
+
+                    <td id="v2_2">
+                        <button class="button_sel button_select" onclick="active_v2()" type="button" id="button_active2"></button>
+
+                    <td id="v3_3">
+                        <button class="button_sel button_select" onclick="active_v3()" type="button" id="button_active3"></button>  
+                </tr>
+
+                <tr>
+                    <td id="v4_4">
+                        <button class="button_sel button_select" onclick="active_v4()" type="button" id="button_active4"></button>
+                    </td>
+
+                    <td id="v5_5">
+                        <button class="button_sel button_select" onclick="active_v5()" type="button" id="button_active5"></button>
+
+                    <td id="v6_6">
+                        <button class="button_sel button_select" onclick="active_v6()" type="button" id="button_active6"></button>  
+                </tr>
+
+                <tr>
+                    <td id="v7_7">
+                        <button class="button_sel button_select" onclick="active_v7()" type="button" id="button_active7"></button>
+                    </td>
+
+                    <td id="v8_8">
+                        <button class="button_sel button_select" onclick="active_v8()" type="button" id="button_active8"></button>
+
+                    <td id="v9_9">
+                        <button class="button_sel button_select" onclick="active_v9()" type="button" id="button_active9"></button>  
+                </tr>
+                    
+            </table>
+            <!--jugador numero 2-->
+
+            <aside class="section__aside">
+                <h2 class="section__aside-h2" id="player2_title">Jugador2</h2>
+                <picture class="section__aside-picture">
+                    <img src="./img/ponyo.png" alt="initial" id="img_player2" width="210px">
+    
+                </picture>
+                <div class="=section__div">
+                    <p class="section__div-p">Puntuación:</p>
+                    <p class="section__div_number_score" id="score2">0</p>
+    
+                </div>
+    
+            </aside>
+
+        </main>
+        <div class="section__div-movil">
+        </div>
+            <div class="player-movil">
+                <p class="player-movil-p">Jugador 1</p>
+                <p id="puntuacion_1m">0</p>
+
+            </div>
+
+            <div class="player-movil">
+                <p class="player-movil-p">Jugador 2</p>
+                <p id="puntuacion_2m">0</p>
+            </div>
+
+    </section>
+    <footer class="footer">
+        <button type="button" class="button_juan" id="ranGame">
+            Sortear Partida
+        </button>
+        <button type="button"onclick="nexGame()" class="button_start" id="nexButton" disabled>
+            Siguiente juego
+        </button>
+
+        <!--Botones de la parte de abajo-->
+         <!--Boton reiniciar-->
+        <button type="button" onclick="resetButton" class="button_start" id="cleanButton">
+            Reiniciar
+        </button>
+
+
+
+    </footer>
+    
+</body>
+</html>
